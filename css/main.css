@@ -1,0 +1,105 @@
+body{ font-family: 'Poppins', sans-serif;}
+.w-color{ color: #f0f0f0;}
+
+.navbar{ 
+    background-color: #be3144; 
+    box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
+    z-index: 2;}
+.navbar .nav-item:hover{
+    background-color: #45567d;
+}
+.navbar .navbar-nav .nav-link{ font-size: 24px;}
+.navbar .navbar-nav .nav-link:hover, .projects .some-projects a:hover{
+    color: #f0f0f0;
+}
+.header{ 
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+.header .head-text h1,.projects h2, .contact h2{
+    font-size: 4rem;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+}
+.header .head-text p{ color: #be3144; font-size: 2.3rem; }
+
+.projects{ background-color: #45567d;
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+    border-radius: 2px;
+}
+
+.projects h2{
+    max-width: 640px;
+    margin: 0 auto 6rem auto;
+    border-bottom: 0.2rem solid #f0f0f0;
+    font-size: 2.7rem;
+}
+.projects .some-projects{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.projects .some-projects a{
+    box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
+}
+.projects .some-projects .project-img{
+    height: calc(100% - 6.8rem);
+    object-fit: cover;
+}
+.projects .some-projects .title{
+    font-size: 1.3rem;
+    background-color: #303841;
+}
+.projects .some-projects .code {
+    color: #303841;
+    transition: color 0.3s ease-out;
+}
+.projects .some-projects a:hover .code { color: #ff7f50;}
+.projects .btn{
+    font-size: 2rem;
+    background: #303841;
+    transition: background 0.3s ease-out;
+    border-radius: 2px;
+    font-size: 20px;
+}
+.projects .btn:hover{
+    background-color: #be3144;
+    color: #f0f0f0;
+}
+.projects .btn:hover > i {
+    transform: translateX(2px);
+}
+.contact{
+    height: 80vh;
+    background-color: #303841;
+}
+.contact .contact-links{
+    max-width: 980px;
+    flex-wrap: wrap;
+}
+.contact .contact-links .btn{
+    font-size: 1.8rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    border-radius: 2px;
+}
+.contact .contact-links .btn:hover {
+    transform: translateY(8px);
+    color: #f0f0f0;
+}
+.fab {
+    font-family: "Font Awesome 5 Brands";
+}
+.footer{
+    font-weight: 300;
+    justify-content: space-evenly;
+    background: #303841;
+    border-top: 4px solid #be3144;
+}
+@media (max-width: 992px){
+    .header .head-text h1{ font-size: 3.5rem;}
+    .header .head-text p{ font-size: 2rem;}
+    .projects{ padding: 20px;}
+    .projects h2{ font-size: 2.3rem;}
+    .projects .project-img{ object-fit: none;}
+}
